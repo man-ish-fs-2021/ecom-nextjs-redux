@@ -10,8 +10,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: colors.red[700],
-        secondary: colors.red[200],
+        primary: {
+          DEFAULT: colors.red[700],
+        },
+        secondary: {
+          DEFAULT: colors.red[500],
+          hover: colors.red[300],
+          border: colors.red[400],
+          text: colors.red[500],
+          dark: colors.red[800],
+          ["dark-hover"]: colors.red[900],
+        },
+        complementary: "#fffff2",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
