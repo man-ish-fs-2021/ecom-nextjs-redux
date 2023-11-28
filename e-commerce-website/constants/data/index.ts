@@ -10,6 +10,14 @@ export type Product = {
     count: number;
   };
 };
+export type Products = {
+  apiData: Array<Product>;
+};
+export const banner = {
+  id: "1",
+  imageUrl: "https://amymhaddad.s3.amazonaws.com/morocco-blue.png",
+  label: "Exclusive deals",
+};
 export const apiData: Array<Product> = [
   {
     id: 1,
