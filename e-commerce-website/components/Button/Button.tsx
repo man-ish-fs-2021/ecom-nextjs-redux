@@ -1,3 +1,4 @@
+"use client";
 import { VariantProps } from "class-variance-authority";
 import { ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";

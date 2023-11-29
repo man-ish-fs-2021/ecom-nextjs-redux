@@ -5,4 +5,14 @@ import { default as Footer } from "./Footer";
 import { default as Banner } from "./Banner";
 import { default as ProductsList } from "./ProductsList";
 import { default as ProductCard } from "./ProductCard";
-export { Navbar, Presenter, Button, Footer, Banner, ProductsList, ProductCard };
+import { default as Price } from "./Price";
+export {
+  Navbar,
+  Presenter,
+  Button,
+  Footer,
+  Banner,
+  ProductsList,
+  ProductCard,
+  Price,
+};

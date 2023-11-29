@@ -5,6 +5,7 @@ export type Product = {
   description: string;
   category: string;
   image: string;
+  qty: 0;
   rating: {
     rate: number;
     count: number;
@@ -18,7 +19,7 @@ export const banner = {
   imageUrl: "https://amymhaddad.s3.amazonaws.com/morocco-blue.png",
   label: "Exclusive deals",
 };
-export const apiData: Array<Product> = [
+const data = [
   {
     id: 1,
     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -286,3 +287,7 @@ export const apiData: Array<Product> = [
     },
   },
 ];
+export const apiData: Array<Product> = data.map((product) => ({
+  ...product,
+  qty: 0,
+}));
