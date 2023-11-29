@@ -9,7 +9,9 @@ export const CartSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
       const item = action.payload as Product;
+      console.log({ item });
       state[item.id] = item;
+      state[item.id].qty = 0;
       state[item.id].qty += 1;
     },
     increaseQty: (state, action) => {

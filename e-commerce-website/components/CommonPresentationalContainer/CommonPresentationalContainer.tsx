@@ -1,16 +1,22 @@
-import React from 'react'
-import { Footer, Navbar } from '..'
+import React from "react";
+import { Footer, Navbar } from "..";
 
-const CommonPresentationalContainer = ({children}: {children: React.ReactNode}) => {
+const CommonPresentationalContainer = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
   return (
-    <div className='w-full h-full relative'>
+    <main className="flex h-screen w-screen">
+      <div className="w-full h-full relative">
         <Navbar />
-        <div className='h-[calc(100%-100px)] p-4 overflow-y-scroll overflow-x-hidden'>
-        {children}
+        <div className="h-[calc(100%-100px)] p-4 overflow-y-scroll overflow-x-hidden">
+          {children}
         </div>
         <Footer />
-    </div>
-  )
-}
+      </div>
+    </main>
+  );
+};
 
-export default CommonPresentationalContainer
+export default CommonPresentationalContainer;

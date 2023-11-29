@@ -21,7 +21,6 @@ function useGetCart(props: GetCartProps) {
 
   const count = id && id.toString() in cart ? cart[id].qty : 0;
   const totalCount = getTotalCount(cart);
-  console.log({ totalCount });
   const dispatch = useAppDispatch();
   const handleAdd = (item: Product) => {
     dispatch(addToCart(item));

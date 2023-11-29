@@ -1,14 +1,11 @@
-import { Banner, Presenter, ProductsList } from "@/components";
+import { Banner,  ProductsList } from "@/components";
 import { apiData, banner } from "@/constants/data";
-
 
 export default function Home() {
   return (
-    <main className="flex h-screen w-screen">
-      <Presenter>
+      <div className="w-full h-full relative">
         <Banner data={banner} />
-        <ProductsList apiData={{apiData}} />
-      </Presenter>
-    </main>
+        <ProductsList apiData={{ apiData }} />
+      </div>
   );
 }

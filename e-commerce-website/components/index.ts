@@ -6,6 +6,7 @@ import { default as Banner } from "./Banner";
 import { default as ProductsList } from "./ProductsList";
 import { default as ProductCard } from "./ProductCard";
 import { default as Price } from "./Price";
+import { default as Rating } from "./Rating";
 export {
   Navbar,
   Presenter,
@@ -15,4 +16,5 @@ export {
   ProductsList,
   ProductCard,
   Price,
+  Rating,
 };

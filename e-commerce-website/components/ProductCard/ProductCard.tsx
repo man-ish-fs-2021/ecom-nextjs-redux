@@ -1,7 +1,7 @@
 import { Product } from "@/constants/data";
 import Image from "next/image";
 import React from "react";
-import { Button, Price } from "..";
+import { Button, Price, Rating } from "..";
 import { DollarSign, Star } from "lucide-react";
 import Link from "next/link";
 import AddToCartButtonPresenter from "../AddToCartButtonPresenter/AddToCartButtonPresenter";
@@ -28,10 +28,7 @@ const ProductCard = ({ data }: ProductCardProps) => {
             </h1>
             <h2 className="text-xs italic py-1">{category}</h2>
           </div>
-          <div className="flex items-center">
-            <Star className="h-4" />
-            <div>{rating.rate}</div>
-          </div>
+          <Rating rate={rating.rate} />
         </div>
         <div className="flex w-full items-center justify-between pt-2 mt-auto">
           <Price price={price} />
