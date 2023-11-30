@@ -10,7 +10,7 @@ const CartButton = () => {
     id: null,
   });
   return (
-    <div className="ml-auto pr-4 flex items-center hover:cursor-pointer">
+    <div id='card-button' className="ml-auto pr-4 flex items-center hover:cursor-pointer">
       <Link href="/cart">
         <Button size="icon">
           <div className="flex items-center justify-center h-full">

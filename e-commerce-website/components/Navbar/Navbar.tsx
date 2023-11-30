@@ -6,7 +6,7 @@ import CartButton from "./CartButton/CartButton";
 
 const Navbar = () => {
   return (
-    <div className="h-[60px] w-full bg-complementary flex items-center px-6 border-b">
+    <div role="navbar" className="h-[60px] w-full bg-complementary flex items-center px-6 border-b">
       <div className="font-bold text-primary text-xl">
         <Link href="/">Store</Link>
       </div>
