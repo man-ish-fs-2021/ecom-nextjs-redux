@@ -11,6 +11,7 @@ import { default as Loading } from "./Loading";
 import { default as CartProductCard } from "./CartProductCard";
 import { default as AddToCartButtonPresenter } from "./AddToCartButtonPresenter";
 import { default as Totals } from "./Totals";
+import { default as EmptyCart } from "./EmptyCart";
 export {
   Navbar,
   Presenter,
@@ -25,4 +26,5 @@ export {
   CartProductCard,
   AddToCartButtonPresenter,
   Totals,
+  EmptyCart,
 };

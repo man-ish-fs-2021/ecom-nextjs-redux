@@ -1,6 +1,6 @@
 "use client";
 import useGetCart from "@/commonHooks/useGetCart";
-import { Button, CartProductCard, Totals } from "@/components";
+import { Button, CartProductCard, EmptyCart, Totals } from "@/components";
 import _ from "lodash";
 import { ArrowBigLeft } from "lucide-react";
 import Link from "next/link";
@@ -15,19 +15,7 @@ const CartPage = () => {
 
       <div className="h-full flex w-full py-3 ">
         {_.isEmpty(allCartItems) ? (
-          <div className="flex flex-col h-full w-full items-center justify-center">
-            <div className="flex text-5xl font-bold text-primary">
-              Your cart is Empty!
-            </div>
-            <div>
-              <Link href="/">
-                <Button variant="ghost" className="flex py-6">
-                  <ArrowBigLeft />
-                  Go back{" "}
-                </Button>
-              </Link>
-            </div>
-          </div>
+         <EmptyCart />
         ) : (
           <>
             <div className="h-full flex flex-col w-2/3 overflow-y-scroll gap-4 items-center">
