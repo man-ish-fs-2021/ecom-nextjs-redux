@@ -7,6 +7,10 @@ import { default as ProductsList } from "./ProductsList";
 import { default as ProductCard } from "./ProductCard";
 import { default as Price } from "./Price";
 import { default as Rating } from "./Rating";
+import { default as Loading } from "./Loading";
+import { default as CartProductCard } from "./CartProductCard";
+import { default as AddToCartButtonPresenter } from "./AddToCartButtonPresenter";
+import { default as Totals } from "./Totals";
 export {
   Navbar,
   Presenter,
@@ -17,4 +21,8 @@ export {
   ProductCard,
   Price,
   Rating,
+  Loading,
+  CartProductCard,
+  AddToCartButtonPresenter,
+  Totals,
 };

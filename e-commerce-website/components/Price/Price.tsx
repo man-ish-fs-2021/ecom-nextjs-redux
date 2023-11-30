@@ -8,7 +8,7 @@ interface PriceProps {
 const Price = ({ price }: PriceProps) => {
   return (
     <div className="flex items-center">
-      <DollarSign className="text-xs h-4" /> {price}
+      <DollarSign className="text-xs h-4" /> {price.toFixed(2)}
     </div>
   );
 };

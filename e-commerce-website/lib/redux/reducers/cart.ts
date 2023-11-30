@@ -9,9 +9,12 @@ export const CartSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
       const item = action.payload as Product;
-      console.log({ item });
+      console.log({ item, state });
       state[item.id] = item;
-      state[item.id].qty = 0;
+      state[item.id] = {
+        ...state[item.id],
+        qty: 0,
+      };
       state[item.id].qty += 1;
     },
     increaseQty: (state, action) => {
@@ -21,9 +24,17 @@ export const CartSlice = createSlice({
     decreaseQty: (state, action) => {
       const id = action.payload as string;
       state[id].qty -= 1;
+      if (state[id].qty === 0) {
+        delete state[id];
+      }
+    },
+    deleteItem: (state, action) => {
+      const id = action.payload as string;
+      delete state[id];
     },
   },
 });
-export const { addToCart, increaseQty, decreaseQty } = CartSlice.actions;
+export const { addToCart, increaseQty, decreaseQty, deleteItem } =
+  CartSlice.actions;
 
 export default CartSlice.reducer;

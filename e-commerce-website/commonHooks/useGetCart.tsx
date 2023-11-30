@@ -15,12 +15,28 @@ const getTotalCount = (cart: { [id: string]: Product }) => {
   });
   return count;
 };
+const getTotalPrice = (cart: { [id: string]: Product }) => {
+  let price = 0;
+  _.keys(cart).forEach((id: string) => {
+    const item = cart[id as keyof typeof cart];
+    price += item.qty * item.price;
+  });
+  return price;
+};
+const getCartItems = (cart: { [id: string]: Product }) => {
+  return _.keys(cart).map((id: string) => {
+    const item = cart[id as keyof typeof cart];
+    return item;
+  });
+};
 function useGetCart(props: GetCartProps) {
   const { id } = props;
   const cart = useAppSelector((state: RootState) => state.cart);
 
   const count = id && id.toString() in cart ? cart[id].qty : 0;
   const totalCount = getTotalCount(cart);
+  const totalPrice = getTotalPrice(cart);
+  const allCartItems = getCartItems(cart);
   const dispatch = useAppDispatch();
   const handleAdd = (item: Product) => {
     dispatch(addToCart(item));
@@ -38,6 +54,9 @@ function useGetCart(props: GetCartProps) {
     handleAdd,
     handleIncrease,
     handleDecrease,
+    cart,
+    totalPrice,
+    allCartItems,
   };
 }
 
