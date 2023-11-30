@@ -22,7 +22,7 @@ const page = () => {
                 <div className="flex flex-col">
                   <div className="border-neutral-200 ">
                     <div className="flex flex-col">
-                      <label className="text-lg font-extralight text-secondary" htmlFor='firstname'> First Name</label>
+                      <label className="text-lg font-extralight text-" htmlFor='firstname'> First Name</label>
                       <input
                         type="text"
                         name="firstname"
@@ -32,7 +32,7 @@ const page = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="flex flex-col">
-                      <label className="text-lg font-extralight text-secondary" > Last Name</label>
+                      <label className="text-lg font-extralight text-" > Last Name</label>
                       <input
                         type="text"
                         name="lastname"
@@ -43,7 +43,7 @@ const page = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="flex flex-col">
-                      <label className="text-lg font-extralight text-secondary" > Phone Number</label>
+                      <label className="text-lg font-extralight text-" > Phone Number</label>
                       <input
                         type="number"
                         name="phone"
@@ -54,7 +54,7 @@ const page = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="flex flex-col">
-                      <label className="text-lg font-extralight text-secondary" > Email Address</label>
+                      <label className="text-lg font-extralight text-" > Email Address</label>
                       <input
                         type="email"
                         name="email"
@@ -65,7 +65,7 @@ const page = () => {
                   </div>
                   <div className="col-md-12">
                     <div className="flex flex-col">
-                      <label className="text-lg font-extralight text-secondary" > Full Address</label>
+                      <label className="text-lg font-extralight text-" > Full Address</label>
                       <textarea
                         name="address"
                         className="border-[1px] rounded-md bg-complementary"
@@ -75,7 +75,7 @@ const page = () => {
                   </div>
                   <div className="col-md-4">
                     <div className="flex flex-col">
-                      <label className="text-lg font-extralight text-secondary" >City</label>
+                      <label className="text-lg font-extralight text-" >City</label>
                       <input
                         type="text"
                         name="city"
@@ -86,7 +86,7 @@ const page = () => {
                   </div>
                   <div className="col-md-4">
                     <div className="flex flex-col">
-                      <label className="text-lg font-extralight text-secondary" >State</label>
+                      <label className="text-lg font-extralight text-" >State</label>
                       <input
                         type="text"
                         name="state"
@@ -97,7 +97,7 @@ const page = () => {
                   </div>
                   <div className="col-md-4">
                     <div className="flex flex-col">
-                      <label className="text-lg font-extralight text-secondary" >Zip Code</label>
+                      <label className="text-lg font-extralight text-" >Zip Code</label>
                       <input
                         type="text"
                         name="zipcode"

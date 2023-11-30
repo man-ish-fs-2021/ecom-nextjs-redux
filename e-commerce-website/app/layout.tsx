@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Provider from "../lib/redux/StoreProvider";
 import "./globals.css";
 import { Presenter } from "@/components";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Store 2023</title>
+        <meta name="Store" content="Store" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <body>
         <Provider>
           <Presenter>{children}</Presenter>

@@ -18,7 +18,7 @@ const CartPage = () => {
          <EmptyCart />
         ) : (
           <>
-            <div className="h-full flex flex-col w-2/3 overflow-y-scroll gap-4 items-center">
+            <div className="h-[90%] flex flex-col w-2/3 overflow-y-scroll gap-4 items-center">
               {allCartItems.map((each) => (
                 <CartProductCard product={each} />
               ))}

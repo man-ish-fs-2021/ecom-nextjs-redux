@@ -20,7 +20,7 @@ const loading = () => {
             </div>
           </div>
         </div>
-      </div>
+    </div>
   )
 }
 
